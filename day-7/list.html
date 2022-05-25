@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+        <style type="text/css">
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block; color: palevioletred; background-color: aliceblue;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block; color: aquamarine; background-color: pink;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block; color: brown; background-color: rgb(228, 154, 154);}
+		</style>
+		
+	</head>
+	<body>
+		
+		<ul id="MainUL">
+			<li>Google
+				<ul>
+					<li>chorme
+						<ul>
+							<li>
+								<a href="https://www.google.com/chrome/">link</a></href>
+							</li>
+						</ul>
+					</li>
+					<li>GMap
+						<ul>
+							<li>
+								<a href="https://www.google.co.in/maps">limk</a></href>
+							</li>
+						</ul>
+					</li>		
+					<li>gmeet
+						<ul>
+							<li> 
+								<a href="https://apps.google.com/meet/">link</a></href>
+							</li>
+						</ul>
+					</li>
+					<li>GSheet
+
+						<ul>
+							<li>
+								<a href="https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fu%2F0%2F&followup=https%3A%2F%2Fdocs.google.com%2Fspreadsheets%2Fu%2F0%2F&ltmpl=sheets&flowName=GlifWebSignIn&flowEntry=ServiceLogin">link</a></href>
+   							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Facebook 
+				<ul>
+ 					<li>log in</li>
+					<li>log out</li>
+                          	</ul>
+			<li>Microsoft
+				<ul>
+					<li>Bing</li>
+					<li>Linked In</li>
+				</ul>
+			</li>
+			<li>Amazon
+				<ul>
+					<li>AWS</li>
+					<li>Ecommerce</li>
+					<li>A-ML</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</body>
+</html>
